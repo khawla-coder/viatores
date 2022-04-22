@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="400.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.GUI.AjouterVolController">
+   <children>
+      <TextField fx:id="txtPrix" layoutX="175.0" layoutY="142.0" prefHeight="31.0" prefWidth="208.0" promptText="Entrer prix" />
+      <Label layoutX="46.0" layoutY="138.0" text="Prix de vol">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="200.0" text="Date de vol">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="106.0" layoutY="42.0" text="Ajouter Vol">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtDate" layoutX="177.0" layoutY="200.0" prefHeight="31.0" prefWidth="208.0" promptText="Date" />
+      <Label layoutX="51.0" layoutY="268.0" text="Destination">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="AjouterButton" layoutX="233.0" layoutY="345.0" mnemonicParsing="false" onAction="#addVol" onMouseClicked="#addVol" text="Ajouter" />
+      <ChoiceBox fx:id="Dest" layoutX="193.0" layoutY="271.0" prefWidth="150.0" />
+      <Button fx:id="ret" layoutX="23.0" layoutY="345.0" mnemonicParsing="false" onAction="#retourner" text="retourner" />
+   </children>
+</AnchorPane>

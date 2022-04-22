@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="minPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.GUI.InterfaceController">
+   <children>
+      <Label layoutX="134.0" layoutY="46.0" prefHeight="55.0" prefWidth="254.0" text="Gestion des vols" />
+      <Button layoutX="60.0" layoutY="113.0" mnemonicParsing="false" onAction="#addV" onMouseClicked="#addV" prefHeight="31.0" prefWidth="147.0" text="Ajouter vol" />
+      <Button layoutX="60.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#addDest" text="Ajouter destination" />
+      <Button layoutX="60.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#reserver" prefHeight="31.0" prefWidth="147.0" text="Reserver !vol" />
+   </children>
+</AnchorPane>
